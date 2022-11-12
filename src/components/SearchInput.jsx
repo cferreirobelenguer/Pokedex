@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import PokemonList from './PokemonList'
-import PokemonIndividual from './PokemonIndividual'
 import StyleSearch from '../assets/css/search.module.css'
 
 
@@ -18,7 +17,7 @@ const SearchInput=()=>{
         
     }
     //Pasamos por props los datos del searchBar y llamamos al component PokemonList que coge esos datos
-    //El componente SearchInput es el componente padre de PokemonIndividual y PokemonList
+    //El componente SearchInput es el componente padre de PokemonList
     
     return(
         <div className="container-fluid">
@@ -27,13 +26,7 @@ const SearchInput=()=>{
                 <button className="btn btn-dark" type="submit" onClick={handlerClick}>Go</button>
             </div>
             <div className={StyleSearch.pokemon_container}>
-                <div className={StyleSearch.pokemon_list}>
-                    <PokemonList dataInput={inputValue}></PokemonList>
-                </div>
-                <div className={StyleSearch.pokemon_individual}>
-                    <PokemonIndividual></PokemonIndividual>
-                </div>
-                
+                <PokemonList dataInput={inputValue}></PokemonList>
             </div>
         </div>
     )
