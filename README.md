@@ -2,7 +2,7 @@
 
 ## TECNOLOGÍAS
 ### He usado flexbox para hacerla totalmente responsive
-### Se ha trabajado con react hooks (useState, useEffect)
+### Se ha trabajado con react hooks (useState, useEffect) y props
 ### Los estilos están hechos en module.css y boostrap 5
 
 ## API
