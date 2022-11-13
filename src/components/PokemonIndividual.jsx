@@ -44,7 +44,8 @@ const PokemonIndividual=(props)=>{
         
         
     },[dataPokemon])
-    
+    //si loading es true es que los datos aún no están cargados porque no se ha hecho la llamada a la api
+    //Si loading es false se muestran los datos encontrados
         return(
             loading?(
                 <><div id={StyleIndividual.containerFav}>

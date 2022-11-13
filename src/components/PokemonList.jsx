@@ -13,7 +13,8 @@ const PokemonList=(props)=>{
     
     
     useEffect(()=>{
-        //llamada api para generar lista de pokemon, los resultados van en state result
+        //Se genera la lista de pokemon cada vez que se actualiza el state offset
+        //offset es un state que indica la paginación cuyos límites son 20 y 1114
         const createList=()=>{
             axios.get("https://pokeapi.co/api/v2/pokemon/?offset="+offset+"&limit=20")
             .then(res=>setResult(res.data.results))
@@ -22,7 +23,7 @@ const PokemonList=(props)=>{
         createList()
         
     },[offset])
-
+    //métodos de paginación
     const handlerPrevious=()=>{
         if(offset<=20){
             setOffset(20)
