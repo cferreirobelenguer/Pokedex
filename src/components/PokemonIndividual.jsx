@@ -61,7 +61,7 @@ const PokemonIndividual=(props)=>{
             ):(
                 <>
                 <aside className="card bg-dark" id={StyleIndividual.individual_card} >
-                    <div className="card-header"><img src={resultInfo.sprites.front_shiny} width="300" height="300" className="img-fluid" alt=""></img></div>
+                    <div className="card-header"><img src={resultInfo.sprites.other.dream_world.front_default} width="300" height="300" className="img-fluid" alt=""></img></div>
                     <div className="card-body"><h2>Nombre: {resultInfo.name}</h2></div>
                     <div className="card-body"><h2>ID: {resultInfo.id}</h2></div>
                     <div className="card-body"><h2>Abilidades: {resultInfo.abilities.map((i)=>{

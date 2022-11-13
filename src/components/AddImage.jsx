@@ -10,7 +10,7 @@ const AddImage=(props)=>{
             axios.get(`${props.url}`)
             .then(res=>{
                 console.log(res.data)
-                setImagen(res.data.sprites.front_shiny)
+                setImagen(res.data.sprites.other.dream_world.front_default)
             })
         }
         getData()
