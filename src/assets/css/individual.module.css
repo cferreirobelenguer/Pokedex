@@ -1,3 +1,4 @@
+/*estilos de componente PokemonIndividual*/
 #containerFav{
     display:flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     align-items: center;
     padding: 10px;
     opacity: 0.9;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 #individual_card{

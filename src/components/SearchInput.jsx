@@ -23,7 +23,7 @@ const SearchInput=()=>{
         <div className="container-fluid">
             <div className="input-group mb-3" id={StyleSearch.searchBar}>
                 <input type="text" className="form-control" placeholder="Search" onChange={handlerChange}></input>
-                <button className="btn btn-dark" type="submit" onClick={handlerClick}>Go</button>
+                <button className="btn btn-dark" type="submit" onClick={handlerClick} id={StyleSearch.searchButton}>Go</button>
             </div>
             <div className={StyleSearch.pokemon_container}>
                 <PokemonList dataInput={inputValue}></PokemonList>

@@ -1,0 +1,110 @@
+/*estilos de color de los tipos de pokemon del componente AddImage*/
+.image_normal{
+    padding:10px;
+    background-color: #665464;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_fire{
+    padding:10px;
+    background-color: #fd813a;
+    border-radius: 30px;
+    opacity:0.9
+}
+
+.image_water{
+    padding:10px;
+    background-color: #286fcc;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_grass{
+    padding:10px;
+    background-color: #7dfc83;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_electric{
+    padding:10px;
+    background-color: #fdff8b;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_fighting{
+    padding:10px;
+    background-color: #b16a41;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_poison{
+    padding:10px;
+    background-color: #c47ce6;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_flying{
+    padding:10px;
+    background-color: #59748a;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_ground{
+    padding:10px;
+    background-color: #917148;
+    border-radius: 30px;
+    opacity:0.9
+}
+.image_rock{
+    padding:10px;
+    background-color: #5f3416;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_psychic{
+    padding:10px;
+    background-color: #f5629f;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_ice{
+    padding:10px;
+    background-color: #9adcf7;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_bug{
+    padding:10px;
+    background-color: #1a5518;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_ghost{
+    padding:10px;
+    background-color: #3a2f5a;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_steel{
+    padding:10px;
+    background-color: #6ee0ba;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_dragon{
+    padding:10px;
+    background-color: #609394;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_dark{
+    padding:10px;
+    background-color: #342a38;
+    border-radius: 30px;
+    opacity:0.9
+}
+.img_fairy{
+    padding:10px;
+    background-color: #8b1d35;
+    border-radius: 30px;
+    opacity:0.9
+}

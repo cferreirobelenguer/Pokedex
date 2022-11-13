@@ -10,6 +10,8 @@ const PokemonList=(props)=>{
     
     const [result, setResult]=useState([])
     const [offset,setOffset]=useState(20)
+
+    const [pokemonInfo,setPokemonInfo]=useState("")
     
     
     useEffect(()=>{
@@ -55,18 +57,22 @@ const PokemonList=(props)=>{
                     <div className="card bg-dark" id={StyleList.pokemonCard} key={i.name}>
                             <div className="card-header" id={StyleList.image_container}><AddImage url={i.url}></AddImage></div>
                             <div className="card-body"  id={StyleList.name_container}><h1>{i.name}</h1></div>
-                            <div className="card-footer"><button>Más info</button></div>
+                            <div className="card-footer"><button className="btn" onClick={()=>{
+                                console.log("evento más info")
+                                setPokemonInfo(i.name)
+                                console.log(pokemonInfo)
+                            }} id={StyleList.button_info}>Más info</button></div>
                     </div>
                 
                 )
             })}
             <div className={StyleList.button_container}>
-                <button className="btn btn-dark m-3" onClick={handlerPrevious}>Anterior</button>
-                <button className="btn btn-dark m-3" onClick={handlerNext}>Siguiente</button>
+                <button className="btn btn-dark m-3" onClick={handlerPrevious} id={StyleList.button_Previous}>Anterior</button>
+                <button className="btn btn-dark m-3" onClick={handlerNext} id={StyleList.button_Next}>Siguiente</button>
             </div>
         </div>
         
-        <PokemonIndividual data={props.dataInput}></PokemonIndividual>
+        <PokemonIndividual data={props.dataInput} info={pokemonInfo}></PokemonIndividual>
         
         </>
     )

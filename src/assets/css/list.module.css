@@ -1,4 +1,4 @@
-
+/*estilos del componente PokemonList*/
 .pokemonList{
     opacity: 0.9;
     color:white;
@@ -19,7 +19,8 @@
     margin:10px;
     border-style:solid;
     border-color:transparent;
-    border-radius:20px;
+    border-radius:30px;
+    padding-top:10px
     
 }
 
@@ -28,4 +29,46 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+#button_info{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #FE6565;
+}
+
+#button_info:hover{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #414549;
+    color:white;
+}
+
+#button_Next{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #FE6565;
+}
+#button_Previous{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #FE6565;
+}
+#button_Next:hover{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #414549;
+    color:white;
+}
+
+#button_Previous:hover{
+    border-radius: 20px;
+    border-style:solid;
+    border-color:transparent;
+    background-color: #414549;
+    color:white;
 }

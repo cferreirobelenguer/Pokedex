@@ -7,6 +7,8 @@ const PokemonIndividual=(props)=>{
     const [dataPokemon,setDataPokemon]=useState("")
     const[resultInfo, setResultInfo]=useState([])
     const [loading, setLoading] = useState(true);
+    const [infoPokemon,setInfoPokemon]=useState("")
+    
     useEffect(()=>{ 
         const sendData=()=>{
             //sendData actualiza el state dataPokemon con los datos que el usuario pone en el input
@@ -15,9 +17,12 @@ const PokemonIndividual=(props)=>{
             if(props.data!==""){
                 setDataPokemon(props.data)
             }
+            if(props.info!==""){
+                setInfoPokemon(props.info)
+            }
         }
         sendData()
-        
+        console.log("info: "+infoPokemon)
     })
 
     useEffect(()=>{
@@ -38,12 +43,39 @@ const PokemonIndividual=(props)=>{
                     
                 });
             }
+
         }
         
         sendInfo()
         
         
     },[dataPokemon])
+
+    useEffect(()=>{
+        const sendInfoPokemon=()=>{
+            setLoading(true)
+            //método que recoge los datos del botón mas info de cada pokemon del listado
+            //Se almacenan los resultados de la búsqueda en el state ResultInfo en caso de 404 ResultInfo está vacío
+            if(infoPokemon!==""){
+                axios.get("https://pokeapi.co/api/v2/pokemon/"+infoPokemon+"/")
+                .then(res=>{
+                    console.log("dato de input: "+res.data)
+                    setResultInfo(res.data)
+                    setLoading(false)
+                    
+                })
+                .catch((err) =>{
+                    console.log(err)
+                    
+                });
+            }
+
+        }
+        
+        sendInfoPokemon()
+        
+        
+    },[infoPokemon])
     //si loading es true es que los datos aún no están cargados porque no se ha hecho la llamada a la api
     //Si loading es false se muestran los datos encontrados
         return(
@@ -62,10 +94,10 @@ const PokemonIndividual=(props)=>{
             ):(
                 <>
                 <aside className="card bg-dark" id={StyleIndividual.individual_card} >
-                    <div className="card-header"><img src={resultInfo.sprites.other.dream_world.front_default} width="300" height="300" className="img-fluid" alt=""></img></div>
+                    <div className="card-header" ><img src={resultInfo.sprites.other.dream_world.front_default} width="300" height="300" className="img-fluid" alt=""></img></div>
                     <div className="card-body"><h2>Nombre: {resultInfo.name}</h2></div>
                     <div className="card-body"><h2>ID: {resultInfo.id}</h2></div>
-                    <div className="card-body"><h2>Abilidades: {resultInfo.abilities.map((i)=>{
+                    <div className="card-body"><h2>Habilidades: {resultInfo.abilities.map((i)=>{
                         return(
                             <div key={i.ability.name}>
                                 <h2>{i.ability.name}</h2>
