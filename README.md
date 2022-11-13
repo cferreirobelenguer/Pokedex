@@ -21,6 +21,7 @@
 ## FUNCIONAMIENTO
 
 ### La app en un lado muestra el listado de todos los pokemon, con una paginación. Si se pulsa siguiente muestra la siguiente página y anterior la anterior.
+### Mediante renderizado condicional se muestra el fondo de la imagen de cada pokemon en función del tipo que es
 
 ![image](https://user-images.githubusercontent.com/88061350/201542532-29f7948e-c116-4c17-8069-79876d014b74.png)
 
