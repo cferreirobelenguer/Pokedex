@@ -22,11 +22,18 @@
 
 ### La app en un lado muestra el listado de todos los pokemon, con una paginación. Si se pulsa siguiente muestra la siguiente página y anterior la anterior.
 
+![image](https://user-images.githubusercontent.com/88061350/201542532-29f7948e-c116-4c17-8069-79876d014b74.png)
 
 ### Cuando se pulsa en más info en cada uno de los pokemon de la lista, en el componente derecho se muestra la información
 
+![image](https://user-images.githubusercontent.com/88061350/201542554-31749108-c3cd-478e-8b0a-dee485e8571f.png)
 
 ### Cuando se introduce un dato en el SearchBar, si coincide con algún nombre de los pokemon, en el componente derecho muestra la información
 
+![image](https://user-images.githubusercontent.com/88061350/201542575-8caf483b-2abd-4527-a290-2784d2dbb62a.png)
+
+### Vista responsive
+
+![image](https://user-images.githubusercontent.com/88061350/201542646-bb43581d-a55c-46d8-818e-45b1180fbb3a.png)
 
 
