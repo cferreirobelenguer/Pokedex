@@ -18,6 +18,8 @@
     - PokemonIndividual: componente donde se muestra la información de un pokemon determinado cuando se pincha en más info o se busca en el SearchBar
     - AddImage: componente que conecta con PokemonList y muestra las imágenes de los pokemon en el listado de pokemons
 
+![prueba tecnica pokemon](https://user-images.githubusercontent.com/88061350/201542852-925ca7f8-9167-416f-b836-1755c9aa25c7.PNG)
+
 ## FUNCIONAMIENTO
 
 ### La app en un lado muestra el listado de todos los pokemon, con una paginación. Si se pulsa siguiente muestra la siguiente página y anterior la anterior.
